@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .active-link {
+    @apply bg-teal-600 rounded-md;
+  }
+  .title-styling {
+    @apply relative before:bg-white before:h-[5px] before:w-28 before:-translate-y-[50%]  before:absolute before:left-[55%] before:top-1/2 after:bg-white after:h-[5px] after:w-28 after:-translate-y-[55%] after:absolute after:right-[55%] after:top-1/2;
+  }
+  .form-control {
+    @apply px-2 py-1  rounded-md focus:outline-none border-2 w-full border-gray-300 focus:border-teal-500;
+  }
+}
